@@ -48,15 +48,24 @@ module.exports = class MenuController {
     this.main();
   }
 
-getDate(){
+  getDate(){
     this.clear();
     console.log("The current date is", Date());
     this.main();
 }
 
-
   exit(){
     console.log("Thanks for using AddressBloc!");
     process.exit();
   }
+
+  getContactCount(){
+    //method definition
+    return this.contacts.length;
+  }
+
+  remindMe(){
+    return "Learning is a life-long pursuit";
+  }
+
 }
